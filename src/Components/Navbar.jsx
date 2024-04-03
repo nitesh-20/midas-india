@@ -5,8 +5,9 @@ import { RiMenu2Line } from "react-icons/ri";
 import { TfiClose } from "react-icons/tfi";
 import "./Nevbar.css"
 import mist from "../assets/mist.png"
+import { Link } from 'react-router-dom';
 
-function Mistnav() {
+function Navbar() {
   const [NewBar_anima, setNewBar_anima] = useState("");
   function NewBar_open() {
     setNewBar_anima("transform translate-x-full");
@@ -52,41 +53,41 @@ function Mistnav() {
           <div>
             <ul>
               <li>
-                <a
-                  href="#"
+                <Link
+                  to="/"
                   data-link-alt="Home"
                   className="text_hover relative block p-4 text-xl overflow-hidden"
                 >
                   <span>Home</span>
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="#"
+                <Link
+                  to="/Courses"
                   data-link-alt="Courses"
                   className="text_hover relative block p-4 text-xl overflow-hidden"
                 >
                   <span>Courses</span>
-                </a>
+                </Link>
               </li>
         
               <li>
-                <a
-                  href="#"
+                <Link
+                  to="/About"
                   data-link-alt="About"
                   className="text_hover relative block p-4 text-xl overflow-hidden"
                 >
                   <span>About</span>
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="#"
+                <Link
+                to="/Contact"
                   data-link-alt="Contact"
                   className="text_hover relative block p-4 text-xl overflow-hidden"
                 >
                   <span>Contact</span>
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
@@ -116,45 +117,46 @@ function Mistnav() {
             <div className="options flex items-center h-full">
               <ul className="flex">
                 <li className="">
-                  <a
-                    href="#"
+                  <Link
+                   to="/"
                     data-link-alt="Home"
                     className="text_hover relative block p-4 text-xl overflow-hidden"
                   >
                     <span>Home</span>
-                  </a>
+                  </Link>
                 </li>
                 <li className="sm:bg-transparent">
-                  <a
-                    href="#"
+                  <Link
+                    to="/Courses"
                     data-link-alt="Courses"
                     className="text_hover relative block p-4 text-xl overflow-hidden"
                   >
                     <span>Courses</span>
-                  </a>
+                  </Link>
                 </li>
                 <li className="">
-                  <a
-                    href="#"
+                  <Link
+                   to="/About"
                     data-link-alt="About"
                     className=" text_hover relative block overflow-hidden p-4 text-xl "
                   >
                     <span>About</span>
-                  </a>
+                  </Link>
                 </li>
                 <li className="">
-                  <a
-                    href="#"
+                  <Link
+                    to="/Contact"
                     data-link-alt="Contact"
                     className="text_hover relative block overflow-hidden p-4 text-xl "
                   >
                     <span>Contact</span>
-                  </a>
+                  </Link>
                 </li>
               </ul>
 
               <div className="Register ml-10">
-                <a href="#">
+                <a
+                 href="#">
                   <button className="bn1 rounded-md text-[#7dc116]">
                     Register !
                   </button>
@@ -170,4 +172,4 @@ function Mistnav() {
   );
 }
 
-export default Mistnav;
+export default Navbar;
