@@ -107,9 +107,9 @@ function Navbar() {
       {/* ----------------------Medium devices--------------------------- */}
 
       <div
-        className={`hidden md:flex fixed w-full border-solid h-16 bg-transparent  backdrop-blur-[3px]`}
+        className={`hidden md:flex fixed w-full border-solid h-16   backdrop-blur-[3px]`}
       >
-        <div className=" shadow-2xl bg-[#ffffff] w-full bg-transparent flex justify-center ">
+        <div className=" shadow-2xl bg-[#ffffff] w-full  flex justify-center ">
           <div className="Nav_open_container flex items-center justify-between h-full w-10/12">
             <div className="Logo h-full">
               <h1 className="font-bold text-5xl text-[#20bb2f]">Logo</h1>
