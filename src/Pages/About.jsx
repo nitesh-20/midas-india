@@ -3,6 +3,7 @@ import AboutMidas from '../Components/About/AboutMidas'
 import Recruitment from '../Components/About/Recruitment'
 import Gallery from '../Components/About/Gallery'
 import Directors from '../Components/About/Directors'
+
 const About = () => {
   return (
     <div className="border-2">
@@ -10,6 +11,7 @@ const About = () => {
           <Recruitment/>
           <Gallery/>
           <Directors/>
+
     </div>
   )
 }

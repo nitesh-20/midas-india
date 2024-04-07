@@ -1,5 +1,5 @@
 
-import mistlogo from '../assets/midas.png'
+import midaslogo from '../assets/midas.png'
 import React, { useState } from "react";
 import { RiMenu2Line } from "react-icons/ri";
 import { TfiClose } from "react-icons/tfi";
@@ -20,7 +20,9 @@ function Navbar() {
     <>
       {/* ---------------------Small Devices---------------------- */}
       <div className="fixed md:hidden w-full flex justify-between px-4 py-2 shadow-2xl items-center bg-white backdrop-blur-[3px] ">
-        <h1 className="text-5xl font-bold text-[#85d88f]">Logo</h1>
+        <h1 className="text-5xl font-bold text-[#85d88f]">
+          <img className="h-10" src={midaslogo} alt="" />
+        </h1>
         <div className=" flex gap-4">
           <button className="bn2 rounded-2xl text-[#ffffff] bg-[#20bb2f]">
             Sign in !
@@ -40,8 +42,9 @@ function Navbar() {
         <div className="w-4/5 bg-white h-screen">
           {/* --------------- */}
 
-          <div className=" border-2 h-28">
-            <h1 className="font-bold text-5xl p-2 text-[#20bb2f]">Logo</h1>
+          <div className=" border-2">
+             <img className="h-20" src={midaslogo} alt="" />
+             
 
             <div className="relative left-40">
               <button className="text-xl">
@@ -111,8 +114,8 @@ function Navbar() {
       >
         <div className=" shadow-2xl bg-[#ffffff] w-full  flex justify-center ">
           <div className="Nav_open_container flex items-center justify-between h-full w-10/12">
-            <div className="Logo h-full">
-              <h1 className="font-bold text-5xl text-[#20bb2f]">Logo</h1>
+            <div className="Logo ">
+                <img className="h-20" src={midaslogo} alt="" />
             </div>
             <div className="options flex items-center h-full">
               <ul className="flex">
