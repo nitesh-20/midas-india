@@ -83,7 +83,7 @@ const Contacts = () => {
                   <input 
                     type="text"
                     name="firstName"
-                    className="form-input border-black border-2 rounded-md w-full"
+                    className="form-input rounded-md w-full"
                     placeholder="First Name"
                     value={userData.firstName}
                     onChange={postUserData}
@@ -93,7 +93,7 @@ const Contacts = () => {
                   <input
                     type="text"
                     name="lastName"
-                    className="form-input border-black border-2 rounded-md  w-full"
+                    className="form-input   rounded-md  w-full"
                     placeholder="Last Name"
                     value={userData.lastName}
                     onChange={postUserData}
@@ -103,7 +103,7 @@ const Contacts = () => {
                   <input
                     type="text"
                     name="phone"
-                    className="form-input border-black border-2 rounded-md  w-full"
+                    className="form-input rounded-md  w-full"
                     placeholder="Phone Number"
                     value={userData.phone}
                     onChange={postUserData}
@@ -113,7 +113,7 @@ const Contacts = () => {
                   <input
                     type="email"
                     name="email"
-                    className="form-input border-black border-2 rounded-md  w-full"
+                    className="form-input rounded-md  w-full"
                     placeholder="Email Address"
                     value={userData.email}
                     onChange={postUserData}
@@ -123,7 +123,7 @@ const Contacts = () => {
                   <input
                     type="text"
                     name="address"
-                    className="form-input border-black border-2 rounded-md  w-full"
+                    className="form-input rounded-md  w-full"
                     placeholder="Address"
                     value={userData.address}
                     onChange={postUserData}
@@ -132,7 +132,7 @@ const Contacts = () => {
                 <div>
                   <textarea
                     name="message"
-                    className="form-textarea border-black border-2 rounded-md  w-full"
+                    className="form-textarea rounded-md  w-full"
                     rows="4"
                     placeholder="Your Message"
                     value={userData.message}
